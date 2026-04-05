@@ -95,7 +95,6 @@ func main() {
 
 	_, err := flags.ParseArgs(optsPtr, os.Args)
 	if err != nil {
-		fmt.Println(err.Error())
 		os.Exit(4)
 	}
 
