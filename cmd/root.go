@@ -14,6 +14,6 @@ func RootCmd() *cobra.Command {
 		Short: "Download files",
 	}
 
-	command.AddCommand(DownloadCmd())
+	command.AddCommand(DownloadCmd(), DedupeCmd())
 	return command
 }
